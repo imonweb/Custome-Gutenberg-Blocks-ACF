@@ -1,7 +1,7 @@
  
 
 .travel-it-block {
-  margin: 10px 30px;
+  margin: 10px 70px;
   display: grid;
   grid-template-columns: 20px 200px 1fr auto;
   gap: 20px;
@@ -42,4 +42,50 @@ img.attachment-full.size-full {
 
 .travel-it-block .content-info {
   font-weight: 100;
+}
+
+.travel-it-block .services-info {
+  font-weight: 100;
+  font-size: 0.85rem;
+  margin: 0;
+  border-left: 1px solid rgba(103,150,103,.3);
+  padding: 20px;
+}
+
+.travel-it-block .services-info p {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  font-family: sans-serif;
+}
+
+.travel-it-block .services-info > p > span {
+    display: flex;
+    align-self: center;
+    width: 8px;
+    height: 8px;
+    background: lightgrey;
+    border-radius: 100%;
+    margin-left: 20px;
+    margin-top: 0;
+    border: 1px solid transparent;
+    position: relative;
+}
+
+.travel-it-block .services-info > p > span:after {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    left: -6px;
+    bottom: -6px;
+    content: ' ';
+    border: 1px solid green;
+    border-radius: 100%;
+}
+
+.travel-it-block .services-info > p > span.available {
+    background: green;
+}
+
+.travel-it-block .content-info {
+  font-family: sans-serif;
 }
